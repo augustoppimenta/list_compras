@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <title>Lista de compras</title>
   <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+  <script src="/app/lista_de_compras.js"></script>
 </head>
 <body ng-controller="ListaComprasController">
   <table>
@@ -23,6 +24,7 @@
   <form name="formItem">
     <input type="text" ng-model="item.produto">
     <input type="number" ng-model="item.quantidade">
+    <button ng-click="adicionaItem()">Add item</button>
   </form>
 </body>
 </html>
