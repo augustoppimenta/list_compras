@@ -5,7 +5,20 @@
   <title>Lista de compras</title>
   <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
 </head>
-<body>
-
+<body ng-controller="ListaComprasController">
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="item in itens">
+        <td><strong>{{item.produto}}</strong></td>
+        <td>{{item.quantidade}}</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
